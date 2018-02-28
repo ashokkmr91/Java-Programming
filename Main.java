@@ -6,7 +6,7 @@ import java.nio.file.StandardCopyOption;
 import java.util.Scanner;
 import java.net.*;
 import java.io.*;
-public class DownloadManager {
+public class Main {
 	String targetDirectory=".";	
 int i;
 	public static void main(String args[]){
@@ -18,9 +18,9 @@ public void interact(){
 
 "-------------------\n"+
 
-"1. Download a file [ ìurlî as input ]\n"+
+"1. Download a file [ ‚Äúurl‚Äù as input ]\n"+
 
-"2. Batch Download [ comma separated ìurlsî as input ]\n"+
+"2. Batch Download [ comma separated ‚Äúurls‚Äù as input ]\n"+
 
 "3. Settings [ configure download directory ]\n"+
 
@@ -173,7 +173,7 @@ public static void download(URL remoteURL, Path localPath) {
                 e4.printStackTrace();
             }
     }
-    System.out.print(remoteURL.toString()+ "download in progressÖ DONE\n");
+    System.out.print(remoteURL.toString()+ "download in progress‚Ä¶ DONE\n");
 }
 public static boolean isValidPath(String path) {
 
